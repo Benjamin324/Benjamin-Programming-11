@@ -42,11 +42,14 @@ public class Main {
         int end_index = 0;
         int count_temp;
         for (int i = 0; i < s.length()-2; i++) {
+            //looping through the string
             count_temp = 0;
                 current_char = i;
+                //checking alphabetical order of all chars after i
                 while (s.charAt(current_char) <= s.charAt(current_char + 1)){
                     count_temp++;
                     current_char++;
+                    //making sure it doesn't go out of bounds
                     if (current_char+1 == s.length()){
                         break;
                     }
@@ -59,7 +62,7 @@ public class Main {
             }
         }
 
-        System.out.println(s.substring(begin_index,end_index+1));
+        System.out.println("Longest substring in alphabetical order is: "+s.substring(begin_index,end_index+1));
         return (s.substring(begin_index,end_index+1));
     }
 
