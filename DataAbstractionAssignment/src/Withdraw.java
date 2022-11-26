@@ -20,7 +20,6 @@ public class Withdraw {
         return("Withdrawal of: $"+ this.amount+ " Date: "+ this.date+ " from account: " + this.account + " Current Balance in " + this.account+ " is: $" + balance);
     }
     //getters
-
     public double getAmount() {
         return amount;
     }
